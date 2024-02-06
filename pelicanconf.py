@@ -37,4 +37,4 @@ DEFAULT_PAGINATION = 20
 # 设置通过文件夹的方式进行文档分类
 USE_FOLDER_AS_CATEGORY = True
 # 输出到Docs
-OUTPUT_PATH = 'Docs/'
+OUTPUT_PATH = 'docs/'
