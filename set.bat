@@ -1,1 +1,1 @@
-copy .\setList\CNAME .\Docs\
+copy .\setList\CNAME .\docs\
