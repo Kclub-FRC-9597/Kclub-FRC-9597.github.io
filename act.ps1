@@ -1,4 +1,3 @@
-REM 退出虚拟环境
 cd ..\Scripts\
-.\deactivate.bat
+.\activate
 cd ..\Kclub-FRC-9597.github.io

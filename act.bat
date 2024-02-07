@@ -1,4 +1,4 @@
 REM 激活虚拟环境
-cd .\Scripts\
+cd ..\Scripts\
 .\activate
-cd ..
+cd ..\Kclub-FRC-9597.github.io
