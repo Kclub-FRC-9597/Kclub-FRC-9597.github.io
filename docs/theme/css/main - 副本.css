@@ -16,8 +16,8 @@
 
 /***** Global *****/
 /* Body */
-body{
-    background: #000000;
+body {
+    background: #F5F4EF;
     color: #000305;
     font-size: 87.5%; /* Base font size: 14px */
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -25,8 +25,6 @@ body{
     margin: 0;
     padding: 0;
     text-align: left;
-	width:100%;
-
 }
 
 /* Headings */
@@ -145,8 +143,8 @@ table {margin: .5em auto 1.5em auto; width: 98%;}
 /* HTML5 tags */
 header {
 	display: block;
-	width:100%;
-	height:80px;
+	width:100%
+	height:100pt
 }
 section, footer,
 aside, nav, article, figure {
@@ -154,7 +152,7 @@ aside, nav, article, figure {
 }
 
 /***** Layout *****/
-.body {clear: both; margin: 0 auto; width:100%;}
+.body {clear: both; margin: 0 auto; max-width: 800px;}
 img { max-width: 100%; }
 img.right, figure.right, div.figure.align-right {
     float: right;
@@ -177,13 +175,9 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 /*
 	Header
 *****************/
-#banner {		
+#banner {
 	margin: 0 auto;
-	padding: 0px 0 0 0;
-	height:80px;
-	position: fixed; /* 设置位置固定*/
-	top:0;			/*置于顶层*/
-	opacity:1;		/*不透明 */
+	padding: 0.8em 0 0 0;
 }
 
 	/* Banner */
@@ -204,52 +198,40 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 		background: none;
 		color: #C74350;
 		text-shadow: none;
-
 	}
 
 	#banner h1 strong {font-size: 0.36em; font-weight: normal;}
 
 	/* Main Nav */
 	#banner nav {
-		background: #3f3f3f;
-		font-size:auto;
+		background: #000305;
+		font-size: 1.143em;
 		overflow: auto;
-		line-height:40px; 
-		height:40px;
-		/* margin: 0 auto 2em auto; */
-		margin: auto;
+		line-height: 30px;
+		margin: 0 auto 2em auto;
 		padding: 0;
 		text-align: center;
-		width: 100%;
+		max-width: 800px;
 
-		border-radius: 0px;
-		-moz-border-radius: 0px;
-		-webkit-border-radius: 0px;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
 	}
 
-	#banner nav ul {
-		list-style: none;
-		margin: 0 auto;
-		max-width: 100%;
-	}
+	#banner nav ul {list-style: none; margin: 0 auto; max-width: 800px;}
 	#banner nav li {float: left; display: inline; margin: 0;}
 
 	#banner nav a:link, #banner nav a:visited {
-		color: #C74451;
+		color: #fff;
 		display: inline-block;
-		height: 100px;
+		height: 30px;
 		padding: 5px 1.5em;
 		text-decoration: none;
 	}
 	#banner nav a:hover, #banner nav a:active,
 	#banner nav .active a:link, #banner nav .active a:visited {
 		background: #C74451;
-		color: #000;
-		text-shadow: none !important;
-	}
-	#banner nav .selected a:link, #banner nav .active a:visited {
-		background: #C74451;
-		color: #000;
+		color: #fff;
 		text-shadow: none !important;
 	}
 

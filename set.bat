@@ -1,3 +1,14 @@
+REM CNAME:域名配置，github会将主页指向该文件指向的域名
 copy .\setList\CNAME .\docs\
-mkdir .\docs\src
-copy .\src\* .\docs\src\
+
+REM 网站默认加载图标
+copy .\assets\img\favicon.ico .\docs\
+
+REM  各文档引用的图片文件
+mkdir .\docs\assets\img
+copy .\assets\img\* .\docs\assets\img\
+
+REM 各个文档引用的视频文件
+REM mkdir .\docs\assets\video
+REM copy .\assets\video\* .\docs\assets\video\
+

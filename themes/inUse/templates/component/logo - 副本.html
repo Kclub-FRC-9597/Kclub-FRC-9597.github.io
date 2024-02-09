@@ -1,9 +1,8 @@
 <a href="{{ SITERUL }}/">
-	<img src = "{{ LOGO_PATH }}" height="100" />
 	{% if LOGO_PATH %}
-	{{ SITENAME }}
-	{% else %}
 	<img src = "{{ LOGO_PATH }}" height="100" />
+	{% else %}
+	<hgroup><h1>{{ SITENAME }}</h1><p>{{ SITESUBTITLE }}</p></hgroup>
 	{% endif %}
 
 </a>
