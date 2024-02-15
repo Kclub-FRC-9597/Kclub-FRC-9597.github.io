@@ -12,46 +12,36 @@
         <meta name="description" content="Hi there 👋" />
 </head>
 
-<body id="index" class="home">
-<!-- Items Should be Shown on Header -->
-<header id="banner" class="body" padding:0 height=200px>
-<nav>
-	<ul text-align:left>
-	<li text-align><a href="/">
-	<img src = "../assets/img/logo_long.png"  height=40px />
+	<body id="index" class="home">
 
-</a></li> 	</ul>
-	<section text-align:right;>
-	<ul text-align:right>
- <!--不是menu_orders里的所有项目都有对应的分类，如果没有对应的分类文章，则直接输出-->
-			<!--按照menu_orders定义的顺序输出菜单-->
-			<!--输出不在categories里的manu项目，对应的链接在pelicaonfig.py中配置-->
-				<li	><a href="">Home</a></li>
- <!--不是menu_orders里的所有项目都有对应的分类，如果没有对应的分类文章，则直接输出-->
-			<!--按照menu_orders定义的顺序输出菜单-->
-						<li	>
-							<a href="/category/seasons.html">Seasons</a>
-						</li>
-			<!--输出不在categories里的manu项目，对应的链接在pelicaonfig.py中配置-->
- <!--不是menu_orders里的所有项目都有对应的分类，如果没有对应的分类文章，则直接输出-->
-			<!--按照menu_orders定义的顺序输出菜单-->
-						<li	>
-							<a href="/category/luban-lock.html">Luban Lock</a>
-						</li>
-			<!--输出不在categories里的manu项目，对应的链接在pelicaonfig.py中配置-->
- <!--不是menu_orders里的所有项目都有对应的分类，如果没有对应的分类文章，则直接输出-->
-			<!--按照menu_orders定义的顺序输出菜单-->
-						<li	 class="active">
-							<a href="/category/about-us.html">About US</a>
-						</li>
-			<!--输出不在categories里的manu项目，对应的链接在pelicaonfig.py中配置-->
- <!--不是menu_orders里的所有项目都有对应的分类，如果没有对应的分类文章，则直接输出-->
-			<!--按照menu_orders定义的顺序输出菜单-->
-			<!--输出不在categories里的manu项目，对应的链接在pelicaonfig.py中配置-->
-				<li	><a href="https://docs.frc-9597.com">Docs</a></li>
-		</ul>
-	</section>
+<!-- Items Should be Shown on Header -->
+<header id="banner">
+<nav>
+	<ul style="float:left;"><li><a href="/">
+	<img src = "../assets/img/logo_long.png"  height=40px />
+</a> </li>
+ 
+					<li	>
+						<a href="/category/seasons.html">Seasons</a>
+					</li>
+ 
+					<li	>
+						<a href="/category/luban-lock.html">Luban Lock</a>
+					</li>
+ 
+					<li	>
+						<a href="/category/members.html">Members</a>
+					</li>
+ 
+					<li	 class="active">
+						<a href="/category/about-us.html">About US</a>
+					</li>
+ 
+			<li	><a href="https://docs.frc-9597.com">Docs</a></li>
+</ul>
 </nav></header><!-- /#banner -->
+		<div style="text-align:center;height:50px;width:100%;"><h1>Luban Robotic, Team 9597 of FRC</h1></div>
+		<hr/>
 <section id="content" class="body">
   <article>
     <header>
@@ -77,23 +67,36 @@
 
   </article>
 </section>
- <!-- redefined in each subpages -->
-    <section id="extras" class="body">
-			<div class="blogroll">
-				<h2>links</h2>
-                <ul>
-						<li><a href="https://www.firstchampionship.org/">FRC</a></li>
-						<li><a href="https://docs.wpilib.org/">FRC WPI</a></li>
-						<li><a href="https://docs.frc-9597.com">Our Docs</a></li>
-                 </ul>
-             </div><!-- /.blogroll -->
-        </section><!-- /#extras -->
-
-
-<footer id="contentinfo" class="body">
-	<p>
-		Copyright <b>Luban Robotic, Frc Team 9597</b> Powered by<a rel="nofollow" href="https://getpelican.com/">Pelican</a>thanks!
-	</p>
-</footer><!-- /#contentinfo --><script src="/js/header.js"></script>
-</body>
+ <footer >
+<div id="extras" class="sponsors">
+	<h1 style="margin:1em 0 0 -1em;"><center>Great Thanks to our Sponsors</center></h1>
+	<p><center>Sponsor Means A Lot to us! Please Sponsor US!</center></p>
+	<ul >
+		<li>K CLUB</li>
+	</ul>
+</div>	<hr/>
+	<section id="extras">
+<div id="extras" class="blogroll" style="margin:0 0 0 1em;background:#2f2f2f;border-right-sytle:solid;border-right-color:#fff;">
+	<h2>Related Links</h2>
+	<ul>
+			<li><a href="https://www.firstchampionship.org/">FRC</a></li>
+			<li><a href="https://docs.wpilib.org/">FRC WPI</a></li>
+			<li><a href="https://docs.frc-9597.com">Our Docs</a></li>
+    </ul>
+</div><!-- /.blogroll -->
+<div id="extras"  class="copyright" style="border-left-style:solid; border-width:2px; border-color:#fff;">
+	<h2></h2>
+	<div style="margin:0 0 0 2em;">
+		<ul >
+		<li>
+		Portions of this content are ©1998–2024 by LuBan Robotic, Team 9597 of FRC. Content available under <a href="https://developer.mozilla.org/zh-CN/docs/MDN/Writing_guidelines/Attrib_copyright_license">a Creative Commons license.</a><br/>
+		</li>
+		<li>
+		This site is Powered by <a  href="https://getpelican.com/">Pelican</a>. Great Thanks!
+		</li>
+		</ul>
+	</div>
+</div	</section>
+	
+</footer><!-- /#contentinfo -->	</body>
 </html>

@@ -1,27 +1,23 @@
+{# 在菜单栏显示logo #}
 <nav>
-	<ul text-align:left>
-	<li text-align>{% include './component/logo.html' %}</li> {# 在菜单栏显示logo #}
-	</ul>
-	<section text-align:right;>
-	<ul text-align:right>
-	{% if DISPLAY_CATEGORIES_ON_MENU -%}
-		{% for title in MENU_ORDERS %}
-		{% set title_state = namespace(inCategories = 0)  %} <!--不是menu_orders里的所有项目都有对应的分类，如果没有对应的分类文章，则直接输出-->
-			<!--按照menu_orders定义的顺序输出菜单-->
-			{% for cat, null in categories %}
-				{% if cat == title.menu  %}
-					{% set title_state.inCategories = 1  %}
-						<li	{% if cat == category %} class="active"{% endif %}>
-							<a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
-						</li>
-					{% endif %}
-			{% endfor %}
-			<!--输出不在categories里的manu项目，对应的链接在pelicaonfig.py中配置-->
-			{% if title_state.inCategories == 0 %}
-				<li	><a href="{{ title.url }}">{{ title.menu }}</a></li>
-			{% endif %}
+	<ul style="float:left;"><li>{% include './component/logo.html' %} </li>
+		{#<ul style="flow:right;display:inline;">#}
+	{% for title in MENU_ORDERS %}
+	{# 不是menu_orders里的所有项目都有对应的分类，如果没有对应的分类文章，则直接输出 #}
+	{% set title_state = namespace(inCategories = 0)  %} 
+	{# 按照menu_orders定义的顺序输出菜单 #}
+		{% for cat, null in categories %}
+			{% if cat == title.menu  %}
+				{% set title_state.inCategories = 1  %}
+					<li	{% if cat == category %} class="active"{% endif %}>
+						<a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+					</li>
+				{% endif %}
 		{% endfor %}
-	{% endif %}
-		</ul>
-	</section>
+		{# 输出不在categories里的manu项目，对应的链接在pelicaonfig.py中配置 #}
+		{% if title_state.inCategories == 0 %}
+			<li	><a href="{{ title.url }}">{{ title.menu }}</a></li>
+		{% endif %}
+	{% endfor %}
+</ul>
 </nav>

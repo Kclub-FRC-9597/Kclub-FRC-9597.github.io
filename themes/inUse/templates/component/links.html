@@ -1,0 +1,11 @@
+{% if LINKS %}
+<div id="extras" class="blogroll" style="margin:0 0 0 1em;background:#2f2f2f;border-right-sytle:solid;border-right-color:#fff;">
+	<h2>{{ LINKS_WIDGET_NAME | default('Links') }}</h2>
+	<ul>
+		{% for name, link in LINKS %}
+			<li><a href="{{ link }}">{{ name }}</a></li>
+        {% endfor %}
+    </ul>
+</div><!-- /.blogroll -->
+        {% endif %}
+

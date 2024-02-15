@@ -11,5 +11,5 @@ if "%a%"=="-r" (
 	pelican --listen
 )
 
+
 @echo on
-echo a=%a%
