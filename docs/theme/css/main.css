@@ -194,6 +194,18 @@ main {
 	main > div figure figcaption {
 		text-align:center;
 	}
+	main >postlist {
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content:center;
+
+	}
+	main >postlist div{
+		width:200px;
+		margin: 0.5em;
+		text-align:center;
+	}
 /*
 	Header
 *****************/
@@ -256,6 +268,72 @@ header {
 		background:#000;
 	}
 	header>nav .selected a:link, header > nav .active a:visited {
+		background: #f00;
+		text-shadow: none !important;
+	}
+
+/*
+ * 帖子展示页面
+ */
+postinfo {
+	display: flex;
+	padding:10px 10px 0 10px;
+	background: rgba(0,0,0,0);
+	box-shadow: 3px 3px 12px rgba(12,12,12,0.5);	
+	
+}	
+	postinfo>nav {
+		background: rgba(0,0,0,0);
+		font-size:1.25em;
+		overflow: hidden;
+		display:flex;
+
+		flex-direction:row;
+		flex-wrap:nowrap;
+		flex:1 0 auto;
+
+		/* justify-content:space-between;
+		
+		box-sizing:border-box;*/
+
+		/* margin: 0 auto 2em auto; */
+		width: auto;
+		height:3em;
+		/* margin: auto;*/
+		vertical-align:top;
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		border-radius:0;
+	}
+
+	postinfo > nav ul {
+		list-style: none;
+		margin-left:auto;
+		height:60px;
+	}
+	postinfo > nav li {
+		width:200px;
+		height:200px;
+		display: block; 
+		vertical-align:bottom;
+	}
+
+
+	postinfo > nav a:link, postinfo > nav a:visited {
+		color: #fff;
+		display: inline-block;
+		padding: 5px 1.5em;
+		text-decoration: none;
+	}
+	postinfo >  nav a:active,
+	postinfo > nav .active a:link, postinfo > nav .active a:visited {
+		background: #F00;
+		text-shadow: none !important;
+	}
+	postinfo > nav a:hover{
+		background:#000;
+	}
+	postinfo>nav .selected a:link, postinfo > nav .active a:visited {
 		background: #f00;
 		text-shadow: none !important;
 	}
@@ -378,31 +456,10 @@ header {
 	Body
 *****************/
 #content {
-	background: #fff;
+	background: rgba(0,0,0,0);
 	margin-bottom: 2em;
 	overflow: hidden;
 }
-	/* 核心内容页面 */
-	#content .main{
-		padding: 20px 20px;
-		max-width: 760px;
-
-		border-radius: 0px;
-		-moz-border-radius: 0px;/* 10px before */
-		-webkit-border-radius: 0px;
-	}
-	/* 信息卡 */
-	#content .roll{
-		display:flex;
-		flex-direction:row;
-	}
-	#content .roll figure{
-		width: 150px;
-		height:200px;
-		border-style:solid;
-		border-width:2px;
-		border-color:#fff;
-	}
 
 /*
 	Extras

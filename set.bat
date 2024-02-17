@@ -8,6 +8,10 @@ REM  各文档引用的图片文件
 mkdir .\docs\assets\img
 copy .\assets\img\* .\docs\assets\img\
 
+REM 移动profile
+mkdir .\docs\assets\img\profile
+copy .\assets\img\profile\* .\docs\assets\img\profile
+
 REM 各个文档引用的视频文件
 REM mkdir .\docs\assets\video
 REM copy .\assets\video\* .\docs\assets\video\

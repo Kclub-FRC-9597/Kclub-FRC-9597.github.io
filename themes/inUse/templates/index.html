@@ -32,7 +32,18 @@
 {% endif %} {# 框架 #}
 
 {# Blogroll #}
-<div id='extras' class='blogroll'><ul>
+<postlist>
+{% if articles %} {# 框架 #}
+	{% for article in articles_page.object_list %}	{# 框架 #}
+		{% if article.category == category and article.title != category %}
+		<div>{% include './component/blogroll.html' %}</div>
+		{% endif %}
+	{% endfor %} {# 框架 #}
+{% endif %} {# 框架 #}
+</postlist>
+	{% if 0 %}
+<postlist>
+	<nav><ul>
 {% if articles %} {# 框架 #}
 	{% for article in articles_page.object_list %}	{# 框架 #}
 		{% if article.category == category and article.title != category %}
@@ -40,6 +51,8 @@
 		{% endif %}
 	{% endfor %} {# 框架 #}
 {% endif %} {# 框架 #}
-</ul></div>
+	</nav></ul>
+<postlist>
+	{% endif %}
 
 {% endblock content %}

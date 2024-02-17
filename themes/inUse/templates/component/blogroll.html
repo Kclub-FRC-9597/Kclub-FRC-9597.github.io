@@ -1,8 +1,11 @@
-<figure>
-	{% if article.sum_img %}
-	<img src="{{ article.sum_img }}" alt="{{ article.sum_img_alt}}" >
+<img src="{{ article.sum_img }}" alt="{{ article.sum_img_alt}}" >
+{% if article.category == "members" %}
+<b center><a href="{{ SITEURL }}/{{article.url}}">
+	{% if article.category == "members" %}
+		{{ article.name }}/{{ article.birthyear }}
 	{% else %}
-	<img src ="{{ LOGO_PATH }}" alt="{{ article.title }}">
+		{{ article.title }}
 	{% endif %}
-	<a href="{{ SITEURL }}{{ article.url }}">{{ article.title }}</a>
-</figure>
+</a></b><br>
+<p>{{ article.summary }}</p>
+{% endif %}
