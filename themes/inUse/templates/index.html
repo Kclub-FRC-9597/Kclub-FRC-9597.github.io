@@ -13,7 +13,7 @@
 		{% if not category  %} {# 确定当前页面是主页 #} 
 			{% if article.category == 'Home Page' %} 
 				{% if article.title ==  'Home Page' %}
-					{% include './component/home_page.html' %}
+					{% include './component/mainpage_header.html' %}
 				{# 为后续升级保留模板 #}
 				{# else %}{% if article.title =='Home_Page_Extra' %}
 					{% include '/component/home_page_extra.html' #}
@@ -23,13 +23,23 @@
 		{% else %}
 			{% if article.category == category %}
 				{% if article.title == category %}
-					<aside id="featured" class="body">
-						<article>{{ article.content }}</article>
-					</aside><!-- /#featured -->
+					{% include './component/mainpage_header.html' %}
 				{% endif %}
 			{% endif %}
 		{% endif %}
 	{% endfor %} {# 框架 #}
+	{# 页面的其他部分 #}
 {% endif %} {# 框架 #}
+
+{# Blogroll #}
+<div id='extras' class='blogroll'><ul>
+{% if articles %} {# 框架 #}
+	{% for article in articles_page.object_list %}	{# 框架 #}
+		{% if article.category == category and article.title != category %}
+		<li>{% include './component/blogroll.html' %}</li>
+		{% endif %}
+	{% endfor %} {# 框架 #}
+{% endif %} {# 框架 #}
+</ul></div>
 
 {% endblock content %}

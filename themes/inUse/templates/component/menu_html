@@ -1,6 +1,6 @@
 {# 在菜单栏显示logo #}
 <nav>
-	<ul style="float:left;"><li>{% include './component/logo.html' %} </li>
+	<ul>
 		{#<ul style="flow:right;display:inline;">#}
 	{% for title in MENU_ORDERS %}
 	{# 不是menu_orders里的所有项目都有对应的分类，如果没有对应的分类文章，则直接输出 #}

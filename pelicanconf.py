@@ -5,7 +5,7 @@ AUTHOR = 'LuBan'
 SITENAME = 'LuBan Robotic' # 站点标题
 SITESUBTITLE = "TEAM 9597, HEAD TO MAKE IT" # 副标题
 SITEURL = ""
-LOGO_PATH = "../assets/img/logo_long.png" #自定义标签，用于显示logo
+LOGO_PATH = "../assets/img/logo_long_red.svg" #自定义标签，用于显示logo
 # 主题相关
 THEME = './themes/inUse' #使用主题
 # 页面设置

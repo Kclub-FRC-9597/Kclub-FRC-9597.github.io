@@ -1,0 +1,11 @@
+<div>
+	{% if article.show_sum_img %}
+		<figure>
+		<img src="{{ article.sum_img }}" 
+		alt="{{ article.sum_img_alt }}" width='500px'>
+		</figure>
+	{% endif %}
+	<article>
+		{{ article.content }}
+	</article>
+</div>

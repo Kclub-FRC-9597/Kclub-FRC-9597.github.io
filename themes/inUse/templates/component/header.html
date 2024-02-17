@@ -1,5 +1,25 @@
-<!-- Items Should be Shown on Header -->
-<header id="banner">
-	{% include './component/menu.html' %}
-</header><!-- /#banner -->
+{# 显示logo #}
+<a href="{{ SITERUL }}/" style="vertical-align:bottom;">
+	<img src="{{ LOGO_PATH }}" height=45px />
+</a>
+{# 显示导航栏 #}
+<nav><ul>
+	{% for title in MENU_ORDERS %}
+		{# 不是menu_orders里的所有项目都有对应的分类，如果没有对应的分类文章，则直接输出 #}
+		{% set title_state = namespace(inCategories = 0)  %} 
+		{# 按照menu_orders定义的顺序输出菜单 #}
+		{% for cat, null in categories %}
+			{% if cat == title.menu  %}
+				{% set title_state.inCategories = 1  %}
+				<li	{% if cat == category %} class="active"{% endif %}>
+					<a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+				</li>
+			{% endif %}
+		{% endfor %}
+		{# 输出不在categories里的manu项目，对应的链接在pelicaonfig.py中配置 #}
+		{% if title_state.inCategories == 0 %}
+			<li	><a href="{{ title.url }}">{{ title.menu }}</a></li>
+		{% endif %}
+	{% endfor %}
+</ul></nav>
 

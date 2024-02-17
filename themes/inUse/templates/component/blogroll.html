@@ -1,0 +1,8 @@
+<figure>
+	{% if article.sum_img %}
+	<img src="{{ article.sum_img }}" alt="{{ article.sum_img_alt}}" >
+	{% else %}
+	<img src ="{{ LOGO_PATH }}" alt="{{ article.title }}">
+	{% endif %}
+	<a href="{{ SITEURL }}{{ article.url }}">{{ article.title }}</a>
+</figure>
