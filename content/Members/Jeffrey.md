@@ -1,13 +1,13 @@
 date:2024-01-01 12:00
-name:Bobby Zhao
-job:Team Captain
+name:Jeffrey Zhu
+job:MECHANIC
 sum_img:../assets/img/profile/default_profile.png
-sum_img_alt:Team Members:Bobby
+sum_img_alt:Team Members:Jeffery
 birthyear:2006
-summary:Bobby has been with robotic since 2019
+summary:Jeffery has been with robotic since 2019
 
 # Competition Experience
-Bobby Joined the team since 2019.
+Jeffery Joined the team since 2019.
 
 - 2023：FRC 2023 offseason China, in team 6970
 - 2022: FRC

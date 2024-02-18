@@ -19,6 +19,7 @@ MENU_ORDERS = [             # 菜单栏信息,自定义词典，非Pelican内置
         ]
 LINKS_WIDGET_NAME = 'Related Links' # 友情链接标题，自定义变量
 HOME_PAGE_ARTICLE =  "HomePageArticle"   # 嵌入到首页的文章标题，自定义变量
+YEAR_NOW = 2024   # 当前年份，用于计算队员年龄
 
 '''
 编译选项

@@ -1,13 +1,13 @@
 date:2024-01-01 12:00
-name:George Gao
-job:Web Weaver
+name:Chuang Li
+job:MECHANIC LEADER
 sum_img:../assets/img/profile/default_profile.png
-sum_img_alt:Team Members:George
+sum_img_alt:Team Members:Chuang
 birthyear:2006
-summary:Bobby has been with robotic since 2019
+summary: 2 year Mechanic Leader and 1 year as caption in RoboMaster Competition Team
 
 # Competition Experience
-George Joined the team since 2019.
+Chuang Joined the team since 2019.
 
 - 2023：FRC 2023 offseason China, in team 6970
 - 2022: FRC

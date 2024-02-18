@@ -2,10 +2,11 @@
 {% if article.category == "members" %}
 <b center><a href="{{ SITEURL }}/{{article.url}}">
 	{% if article.category == "members" %}
-		{{ article.name }}/{{ article.birthyear }}
+		{{ article.name }}/{{ (article.birthyear|int - YEAR_NOW)|abs }}'
 	{% else %}
 		{{ article.title }}
 	{% endif %}
-</a></b><br>
+	</a></b><br/>
+<p style="width:100%;background:#f00;color:#fff">{{ article.job }}</p>
 <p>{{ article.summary }}</p>
 {% endif %}

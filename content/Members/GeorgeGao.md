@@ -3,8 +3,8 @@ name:George Gao
 job:Web Weaver
 sum_img:../assets/img/profile/default_profile.png
 sum_img_alt:Team Members:George
-birthyear:2006
-summary:Bobby has been with robotic since 2019
+birthyear:2007
+summary:George has been with robotic since 2019
 
 # Competition Experience
 George Joined the team since 2019.
